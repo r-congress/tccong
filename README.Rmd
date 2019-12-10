@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(twcong)
+options(width = 90)
+```
+
+# twcong
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+A simple interface to [TweetCongress](http://www.tweetecongress.com/) APIs 
+
+## Installation
+
+You can install the released version of twcong from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("twcong")
+```
+
+Or from Github
+
+``` r
+remotes::install_github("r-congress/twcong")
+```
+
+## Tweeters API
+
+Data returned from TweetCongress' Tweeters API
+
+```{r}
+## fetch tweeters data
+twt <- twcong_tweeters()
+
+## view data
+twt
+```
+

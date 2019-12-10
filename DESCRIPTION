@@ -1,0 +1,25 @@
+Package: twcong
+Title: Interface to TweetCongress APIs
+Version: 0.0.1
+Authors@R: c(
+    person("Michael W.", "Kearney", ,
+      email = "kearneymw@missouri.edu", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0730-4694")),
+    person("Alieva", "Iuliia", ,
+      role = c("ctb"),
+      comment = c(ORCID = "0000-0001-6270-8985"))
+    )
+Description: A simple interface for interacting with TweetCongress's 'Tweeters',
+    'Stats', and 'Tweets' APIs, which provide Twitter data about current members
+    of the U.S. Congress and can be found at the following URL: <http://www.tweetcongress.org/>.
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+License: MIT + file LICENSE
+URL: https://github.com/r-congress/twcong
+BugReports: https://github.com/r-congress/twcong/issues
+Language: en-US
+Imports: 
+    jsonlite,
+    tibble
+RoxygenNote: 7.0.2
