@@ -11,11 +11,11 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-library(twcong)
-options(width = 90)
+library(tccong)
+options(width = 100)
 ```
 
-# twcong
+# tccong
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -24,27 +24,52 @@ A simple interface to [TweetCongress](http://www.tweetecongress.com/) APIs
 
 ## Installation
 
-You can install the released version of twcong from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of **tccong** from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("twcong")
+install.packages("tccong")
 ```
 
 Or from Github
 
 ``` r
-remotes::install_github("r-congress/twcong")
+remotes::install_github("r-congress/tccong")
 ```
 
-## Tweeters API
+## Tweeters
 
 Data returned from TweetCongress' Tweeters API
 
 ```{r}
 ## fetch tweeters data
-twt <- twcong_tweeters()
+twtrs <- tcc_tweeters()
 
 ## view data
-twt
+twtrs
+```
+
+## Tweets
+
+Data returned from TweetCongress' Tweets API
+
+```{r}
+## fetch tweeters data
+twts <- tcc_tweets()
+
+## view data
+twts
+```
+
+
+## Stats
+
+Data returned from TweetCongress' Stats API
+
+```{r}
+## fetch tweeters data
+sts <- tcc_stats()
+
+## view data
+sts
 ```
 

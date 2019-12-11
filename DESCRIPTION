@@ -1,4 +1,4 @@
-Package: twcong
+Package: tccong
 Title: Interface to TweetCongress APIs
 Version: 0.0.1
 Authors@R: c(
@@ -16,8 +16,8 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 License: MIT + file LICENSE
-URL: https://github.com/r-congress/twcong
-BugReports: https://github.com/r-congress/twcong/issues
+URL: https://github.com/r-congress/tccong
+BugReports: https://github.com/r-congress/tccong/issues
 Language: en-US
 Imports: 
     jsonlite,
